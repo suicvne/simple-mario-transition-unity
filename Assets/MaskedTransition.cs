@@ -95,7 +95,8 @@ namespace IgnoreSolutions
         {
             for(int i = 0; i < SideRects.Length; i++)
             {
-                SetRectSizePosBySide(SideRects[i].rectTransform, (Sides)i);
+                if(SideRects[i] != null)
+                    SetRectSizePosBySide(SideRects[i].rectTransform, (Sides)i);
             }
         }
     }
